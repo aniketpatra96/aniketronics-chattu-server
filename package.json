@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "server for my chattu app",
+  "homepage": "https://github.com/aniketpatra96/aniketronics-chattu-server#readme",
+  "bugs": {
+    "url": "https://github.com/aniketpatra96/aniketronics-chattu-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniketpatra96/aniketronics-chattu-server.git"
+  },
+  "license": "ISC",
+  "author": "ANIKET PATRA",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cloudinary": "^2.8.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
