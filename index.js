@@ -11,8 +11,8 @@ app.use(express.urlencoded({ limit: "10mb", extended: true }));
 
 app.post("/profile/upload", async (req, res) => {
   try {
-    const { imageDataUrl } = req.body;
-    const uploadResponse = await cloudinary.uploader.upload(imageDataUrl);
+    const { image } = req.body;
+    const uploadResponse = await cloudinary.uploader.upload(image);
     const imageURl = uploadResponse.secure_url;
     return res.status(201).json({ imageURl });
   } catch (error) {
